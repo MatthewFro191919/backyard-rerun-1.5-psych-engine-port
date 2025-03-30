@@ -159,10 +159,6 @@ import lime.media.AudioSource;
 	@:noCompletion private function set_position(value:Float):Float
 	{
 		if (!__isValid) return 0;
-
-		#if lime
-		__source.currentTime = value - __source.offset;
-		#end
 		return value;
 	}
 
